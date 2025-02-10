@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <h1>Portfolio</h1>
+    <nav>
+        <a href="../index.html">Home</a> 
+        <a href="about.html">About Me</a>
+        <a href="skill.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="research.html">Research</a>
+        <a href="interests.html">Extracurricular Interests</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div id="projects">
+        <h2>My Projects</h2>
+        <ul id="projects-list"></ul>
+    </div>
+    <script>
+        async function fetchGitHubProjects() {
+            const username = 'your-github-username'; // Replace with your GitHub username
+            const response = await fetch(`https://api.github.com/users/mubin25-dodu/repos`);
+            const repos = await response.json();
+            const projectsList = document.getElementById('projects-list');
+
+            repos.forEach(repo => {
+                const listItem = document.createElement('li');
+                const link = document.createElement('a');
+                link.href = repo.html_url;
+                link.textContent = repo.name;
+                listItem.appendChild(link);
+                projectsList.appendChild(listItem);
+            });
+        }
+
+        fetchGitHubProjects();
+    </script>
+</body>
+</html>

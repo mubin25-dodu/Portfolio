@@ -1,0 +1,39 @@
+h1{
+    color:rgb(114, 109, 109);
+}
+body{background-color:black;}
+*{
+    color:rosybrown
+}
+button {
+    margin: 12px;
+    height: 24px;
+    width: 50px;
+    border-radius: 10px;
+    background: #1f1f1f;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 100px #fbfafa, 5px 5px 15px #7a7a7a, inset 5px 5px 10px #8a8989,
+      inset -5px -5px 10px #2d2d2d;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+  }
+  
+  button:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+      inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+  }
+  img{
+    border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%; }
+    img:hover {
+        box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+          inset -5px -5px 10px #444;
+        color: #d6d6d6;
+        transition: 500ms;
+      }
