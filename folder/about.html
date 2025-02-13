@@ -3,30 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="card.css">
+    <style>
+        #nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(30, 29, 29, 0.829);
+            z-index: 1000;
+        }
+        #nav2 button {
+            margin: 5px;
+        }
+        #dropdown {
+            position: fixed;
+            top: 50px;
+            right: 10px;
+            z-index: 1000;
+        }
+        #dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        #dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        #dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        #dropdown:hover #dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
     <body>
-        <h1>Portfolio</h1>
-        <nav>
-            <a href="../index.html">Home</a> 
-            <a href="about.html">About Me</a>
-            <a href="skill.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="research.html">Research</a>
-            <a href="interests.html">Extracurricular Interests</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <h2>Who Am I?</h2>
+        <br>
+        <br><section id="cardl"><h2>Who Am I?</h2>
         <p>I am a second-year Computer Science and Engineering (CSE) student at AIUB, with a deep interest in software development, game design, and real-world problem-solving. My focus is on writing efficient algorithms and creating interactive applications.</p>
-        <h2>Education</h2>
+        </section>
+        <section id="cardr">        <h2>Education</h2>
         <p>BSc in Computer Science & EngineeringAmerican International University-Bangladesh (AIUB)</p>
-        <h2>Interests</h2>
+       
+         </section>
+         <section id="cardl"> <h2>Interests</h2>
         <ul>
             <li>Software Engineering</li>
             <li>Game Development</li>
             <li>Algorithms & Data Structures</li>
             <li>Research on CS education & Mathematical Analysis</li>
-        </ul>
+        </ul></section>
+        </section>
+     
+        
+    </section>
+</main> <header> 
+    <div id="nav">
+        <h1>Portfolio</h1>
+        <nav id ="nav2">
+            <a href="../index.html"><button id="b1">Home</button></a> 
+            <a href="folder/about.html"><button id="b1">about</button></a>
+            <a href="folder/skill.html"><button id="b1">Skills</button></a>
+            <a href="folder/projects.html"><button id="b1">Projects</button></a>
+            <a href="folder/research.html"><button id="b1">Research</button></a>
+            <a href="folder/interests.html"><button id="b1">Extracurricular Interests</button></a>
+            <a href="folder/contact.html"><button id="b1">Contact</button></a>
+        </nav>
+    </div>
+</header>
+<div id="dropdown">
+    <button>Menu</button>
+    <div id="dropdown-content">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
     
 </body>
 </html>
