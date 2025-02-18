@@ -192,8 +192,9 @@ p{font-size: 150%;}
     display: inline-flex;
     margin: 5px;
   }
- #card{ transform: scale(0.6);
-      transform-origin: top center;}
+ #card{ transform:scale(0.6);
+ 
+  }
   #dropdown {
     display: block;
     position: absolute;
@@ -231,9 +232,8 @@ p{font-size: 150%;}
   #card {
     margin: -60px;
     padding: 50px;
-    position: static;
+    margin-top: -250px;
     text-align: center;
-   
   }
   #pp {
     position: static;
