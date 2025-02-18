@@ -1,4 +1,26 @@
-#cardl, #cardr{
+.container {
+    display: flex;
+    justify-content: space-between; /* Ensures cards are positioned left and right */
+    align-items: flex-start; /* Align items to the top */
+    width: 100%;
+    gap: 20px; /* Adds spacing between the cards */
+}
+
+#cardl, #cardr {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #9d98982b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1%;
+    padding: 50px;
+    position: relative;
+    width: 48%; /* Makes sure both fit in one row with space */
+    margin-top: 40px; min-width: 300px; /* Prevents the cards from shrinking too much */
+}
+#card1{
     display: flex;
     justify-content: center;
     align-items: left;
@@ -8,5 +30,16 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 1%;
     padding: 50px;
+    margin-top: 70px;
     position: relative;
+}
+@media (max-width: 768px) {
+.container {
+    flex-direction: column; /* Stack the cards */
+    align-items: center; /* Center them */
+}
+
+#cardl, #cardr {
+    width: 82%; /* Take more width on small screens */
+}
 }

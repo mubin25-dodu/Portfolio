@@ -3,7 +3,7 @@ html {
       rgba(0, 0, 0, 0.5), 
       rgba(0, 0, 0, 0.5)
     ),
-    url(cover.jpg) no-repeat center center fixed;
+    url(img/cover.jpg) no-repeat center center fixed;
   background-size: cover;
   height: auto;
 }
@@ -117,7 +117,7 @@ p{font-size: 150%;}
   background-color: #0000004d;
   box-shadow: 0px 0px 10px rgb(255, 2, 2);
   text-align: center;
-  margin-top: 450px;
+  margin-top: 300px;
   position: relative;
 }
 #card:hover{
@@ -142,8 +142,8 @@ p{font-size: 150%;}
 }
 
 #icon1:hover, #icon2:hover, #icon3:hover, #icon4:hover {
-  box-shadow: -5px -5px 15px #1518d1, 5px 5px 15px #1c2bca, inset 5px 5px 10px #0004f0,
-    inset -5px -5px 10px #0729ea;
+  box-shadow: -5px -5px 15px #d115c8, 5px 5px 15px #9609a3, inset 5px 5px 10px #85059c,
+    inset -5px -5px 10px #3c07ea;
   color: #d6d6d6;
   transition: 500ms;
 }
