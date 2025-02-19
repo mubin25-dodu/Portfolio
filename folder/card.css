@@ -18,18 +18,17 @@
     padding: 50px;
     position: relative;
     width: 48%; /* Makes sure both fit in one row with space */
-    margin-top: 40px; min-width: 300px; /* Prevents the cards from shrinking too much */
+    margin-top: 40px; min-width: 30px; /* Prevents the cards from shrinking too much */
 }
 #card1{
     display: flex;
-    justify-content: center;
     align-items: left;
     flex-direction: column;
     background-color: #9d98982b;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 1%;
-    padding: 50px;
+    padding: 30px;
     margin-top: 70px;
     position: relative;
 }
@@ -40,6 +39,10 @@
 }
 
 #cardl, #cardr {
-    width: 82%; /* Take more width on small screens */
+    width: 70%; /* Take more width on small screens */
+}
+#card1{
+    margin-top: 120px;
+   
 }
 }

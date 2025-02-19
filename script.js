@@ -10,3 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+document.addEventListener('scroll', function() {
+  const nav3 = document.getElementById('nav3');
+  if (window.scrollY > 100) {
+    nav3.style.top = '-60px';
+  } else {
+    nav3.style.top = '50px';
+  }
+});

@@ -6,6 +6,7 @@ html {
     url(img/cover.jpg) no-repeat center center fixed;
   background-size: cover;
   height: auto;
+  font-family: "Damion", cursive;
 }
 
 h1{
@@ -27,8 +28,18 @@ h1{
     left: 0;
     right: 0;
     width: 100%;
-    
-    
+        
+}
+#nav3{
+  display: none;
+  flex-direction: row;
+  width: 80%;
+  position: absolute;
+  justify-content: space-between;
+  top: 50px;
+  left: 100px;
+  z-index: 999;
+  transition: top 0.3s;
 }
 #nav2{
  margin-right: 10px;
@@ -156,6 +167,7 @@ p{font-size: 150%;}
 }
 
 @media (max-width: 1200px) {
+  
   #icon1, #icon2, #icon3, #icon4 {
     margin-bottom: 10px;
   }
@@ -169,6 +181,14 @@ p{font-size: 150%;}
     margin-top:-0px;
     margin-bottom: 20px;
   }
+}
+#nav3{
+  display: none;
+  flex-direction: row;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  z-index: 999;
 }
 #icon1, #icon2, #icon3, #icon4 {
   position: relative;
@@ -244,6 +264,10 @@ p{font-size: 150%;}
   }
   #nav2 {
     display: none;
+  }
+  #nav3 {
+    display: flex;
+    flex-direction: row;
   }
   #b1 {
     margin: 10px;
